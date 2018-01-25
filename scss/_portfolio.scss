@@ -1,0 +1,47 @@
+@import 'colors';
+
+.showcase {
+    padding: 120px 0;
+    .description {
+        padding: 30px 50px;
+        .technologies {
+            padding: 10px 0;
+            margin-top: 10px;
+            border-top: 1px dashed $color-main-dark;
+            span {
+                display: inline-block;
+                color: white;
+                font-size: 11px;
+                padding: 4px 8px;
+                background: $color-main;
+                margin: 4px 2px;
+            }
+        }
+    }
+}
+
+.separator {
+    display: table;
+    margin: 0 auto;
+    i {
+        background-color: darken($color-main-light, 10%);
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .showcase {
+        .description {
+            padding: 15px 15px;
+        }
+
+        .description.text-right {
+            text-align: left;
+        }
+    }
+}

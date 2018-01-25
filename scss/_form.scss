@@ -1,0 +1,44 @@
+@import 'typography';
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px;
+    input {
+        background-color: lighten($color-main-dark, 10%);
+        border: none;
+        color: white;
+        display: block;
+        font-family: $secondary-font;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    textarea {
+        background-color: lighten($color-main-dark, 10%);
+        border: none;
+        color: white;
+        display: block;
+        font-family: $secondary-font;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    button {
+        background-color: $color-main;
+        border: none;
+        color: white;
+        display: block;
+        font-family: $secondary-font;
+        font-size: 18px;
+        margin-left: auto;
+        padding: 20px;
+        transition: background 0.2s;
+        &:hover {
+            background-color: lighten($color-main, 10%);
+            cursor: pointer;
+        }
+    }
+}

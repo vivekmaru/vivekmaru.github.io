@@ -1,0 +1,31 @@
+@import 'backgrounds.scss';
+@import 'blurbs.scss';
+@import 'browser.scss';
+@import 'buttons.scss';
+@import 'colors.scss';
+@import 'footer.scss';
+@import 'form.scss';
+@import 'grid.scss';
+@import 'nav.scss';
+@import 'portfolio.scss';
+@import 'shapes.scss';
+@import 'skills.scss';
+@import 'tablet.scss';
+@import 'typography.scss';
+@import 'utilities.scss';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $primary-font;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    color: $color-main-dark;
+}

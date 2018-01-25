@@ -1,0 +1,67 @@
+#blurb-box-1 {
+    position: relative;
+    background-color: darken($color-main-light, 10%);
+    color: $color-main-dark;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin-top: 80px;
+    margin-bottom: -100px;
+    &:after {
+        top: 100%;
+        left: 30%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(232, 244, 247, 0);
+        border-top-color: darken($color-main-light, 10%);
+        border-width: 30px;
+        margin-left: -30px;
+    }
+    img {
+        -webkit-box-shadow: 0px 0px 20px -5px rgba(0,51,66,1);
+        -moz-box-shadow: 0px 0px 20px -5px rgba(0,51,66,1);
+        box-shadow: 0px 0px 20px -5px rgba(0,51,66,1);
+        position: absolute;
+        top: -120px;
+        left: 7%;
+        transform: rotateZ(-6deg);
+        z-index: -1;
+    }
+    a {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        transform: rotateZ(6deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #blurb-box-1 {
+        margin: 0 auto;
+        margin-top: 60px;
+        bottom: -100px;
+        &:after {
+            left: 50%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #blurb-box-1 {
+        margin-top: 0;
+        img {
+            display: none;
+        }
+        a {
+            position: inherit;
+            display: block;
+            margin-top: -20px;
+            text-align: center;
+            transform: rotateZ(0deg);
+        }
+    }
+}

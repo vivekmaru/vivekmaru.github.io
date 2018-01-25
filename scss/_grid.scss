@@ -1,0 +1,37 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.col-2 {
+    flex: 2;
+    margin: 0 15px;
+}
+
+.col-3 {
+    flex: 3;
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+}

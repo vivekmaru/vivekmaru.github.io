@@ -1,0 +1,64 @@
+.shape {
+    position: absolute;
+    z-index: 0;
+}
+
+#shape-circle-1 {
+    left:-100px;
+    bottom: -100px;
+    background-color: darken($color-main, 10%);
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50vh;
+}
+
+#shape-circle-2 {
+    top:-150px;
+    right: -150px;
+    background-color: darken($color-main, 10%);
+    height: 90vh;
+    width: 90vh;
+    border-radius: 80vh;
+}
+
+#shape-circle-3 {
+    right:-100px;
+    bottom:-100px;
+    background-color: $color-main-light;
+    height: 70vh;
+    width: 70vh;
+    border-radius: 50vh;
+}
+
+#shape-circle-4 {
+    left:-150px;
+    top: -150px;
+    background-color: $color-main-light;
+    height: 90vh;
+    width: 90vh;
+    border-radius: 90vh;
+}
+
+#shape-circle-5 {
+    right: -400px;
+    top: 450px;
+    background-color: $color-main-light;
+    height: 65vh;
+    width: 65vh;
+    border-radius: 90vh;
+}
+
+#shape-circle-6 {
+    left: 5%;
+    bottom: 30%;
+    background-color: $color-main-light;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 90vh;
+}
+
+@media (max-width: 480px) {
+    .shape {
+        display: none;
+    }
+}

@@ -1,0 +1,132 @@
+@import 'colors';
+
+nav {
+    color: $color-light;
+    font-family: $secondary-font;
+    font-size: 22px;
+    font-weight: 500;
+    position: fixed;
+    transition: all 0.2s;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+    transition: background 0.2s;
+    span {
+        margin-top: 30px;
+    }
+}
+
+.nav-items {
+    display: flex;
+    a {
+        box-sizing: border-box;
+
+        padding: 30px 0 5px 0;
+        margin: 0 30px;
+        text-decoration: none;
+        color: white;
+        transition: padding 0.2s;
+        &:hover {
+            border-bottom: 3px solid $color-light;
+            padding-top: 25px;
+        }
+        &:last-child {
+            display: none;
+            &:hover {
+                cursor: pointer;
+                border: none;
+                color: $color-light;
+                background-color: darken($color-main, 10%);
+            }
+        }
+    }
+}
+
+
+/*scrolling*/
+.nav-scroll {
+    background: $color-main-dark;
+    color: white;
+    font-size: 14px;
+    transition: all 0.5s;
+    span {
+        margin-top: 20px;
+    }
+    .nav-items a {
+        padding: 20px 0;
+        color: white;
+        border: none;
+        border-top: 3px solid transparent;
+        &:hover {
+            border-color: $color-main;
+        }
+    }
+    .nav-items a.active {
+        color: $color-main;
+        border-color: $color-main;
+    }
+}
+
+/*navigation overlay*/
+.nav-overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    background-color: $color-main-dark;
+    overflow-x: hidden;
+    transition: all 0.2s;
+    padding-top: 60px;
+    text-align:center;
+    a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 22px;
+        color: $color-main-light;
+        display: block;
+        transition: 0.2s;
+        &:hover {
+            color: $color-light;
+        }
+    }
+    .toggle-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 30px;
+        font-size: 22px;
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($color-main-dark, 10%);
+        }
+    }
+}
+
+/*responsive*/
+@media screen and (max-width: 900px) {
+    .nav {
+        padding-right: 0;
+    }
+    .nav-items a {
+        display: none;
+        padding: 0;
+    }
+    .nav-items a:last-child {
+        display: block;
+        padding: 30px;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    // scolling
+    .nav-scroll {
+        .nav-items a:last-child {
+            padding: 20px;
+        }
+    }
+}

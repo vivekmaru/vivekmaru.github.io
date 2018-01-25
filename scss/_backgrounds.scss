@@ -1,0 +1,111 @@
+@import 'colors';
+@import 'typography';
+
+section {
+    position: relative;
+}
+
+.bg-hero {
+    background-color: $color-main;
+    padding-top: 220px;
+    color: $color-light;
+    .container {
+        position: inherit;
+        h2 {
+            margin-left: 20px;
+        }
+        a {
+            margin-left: -300px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.bg-dark {
+    background-color: $color-main-dark;
+    z-index: 1;
+}
+
+.bg-white {
+    background-color: $color-light;
+    .container {
+        position: inherit;
+    }
+}
+
+.bg-light {
+    background-color: $color-main-light;
+    z-index: 1;
+    .container {
+        position: inherit;
+        z-index: 1;
+    }
+}
+
+.bg-brand {
+    background-color: $color-main;
+    .container {
+        position: inherit;
+        z-index: 2;
+    }
+}
+
+.angle-right-top {
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        bottom: 0;
+        transform-origin: left bottom;
+        transform: skewY(-5deg);
+    }
+}
+
+.angle-right-bottom {
+    &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        bottom: 0;
+        transform-origin: left bottom;
+        transform: skewY(5deg);
+    }
+}
+
+.angle-left-top {
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        bottom: 0;
+        transform-origin: right top;
+        transform: skewY(5deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .bg-hero {
+        padding-top: 150px;
+        .container {
+            h1 {
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+                margin-left: 0;
+            }
+            a {
+                margin-left: 0;
+            }
+        }
+    }
+}

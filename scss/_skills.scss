@@ -1,0 +1,45 @@
+@import 'colors';
+@import 'typography';
+
+.skills {
+    display: flex;
+    min-height: 600px;
+    h2 {
+        font-size: 63px;
+        font-family: $secondary-font;
+    }
+    .skill {
+        max-width: 600px;
+        margin: 0 auto;
+        H4 {
+            color: white;
+            border-bottom: 10px solid lighten($color-main-dark, 10%);
+        }
+        ul {
+            padding: 20px;
+            li {
+                list-style-type: none;
+                color: white;
+                font-size: 22px;
+                font-family: $secondary-font;
+            }
+        }
+    }
+}
+
+.slider-arrow {
+    padding: 10px;
+    font-size: 64px;
+    color: $color-main-light;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        cursor: pointer;
+        color: $color-main;
+    }
+}

@@ -1,0 +1,67 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+$primary-font:   'Comfortaa', cursive;
+$secondary-font: 'Consolas', monaco, monospace;
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 42px;
+    span {
+        font-size: 64px;
+    }
+}
+
+h4 {
+    font-family: Consolas,monaco,monospace;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Consolas,monaco,monospace;
+}
+
+// align
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// colors
+.text-white {
+    color: $color-light;
+}
+
+.text-brand {
+    color: $color-main;
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+        span {
+            font-size: 42px;
+        }
+    }
+
+    h4 {
+        font-family: Consolas,monaco,monospace;
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

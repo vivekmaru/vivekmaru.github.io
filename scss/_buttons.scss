@@ -1,0 +1,50 @@
+@import 'colors';
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background 0.2s;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-sm {
+    font-size: 14px;
+    padding: 7px 20px;
+    border-radius: 4px;
+}
+
+.btn-dark {
+    color: $color-light;
+    background-color: $color-main-dark;
+    &:hover {
+        background-color: lighten($color-main-dark, 10%);
+    }
+}
+
+.btn-outline {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 3px;
+}
+
+.btn-outline-white {
+    color: white;
+    border-color: $color-light;
+    &:hover {
+        color: $color-main-dark;
+        background-color: $color-light;
+    }
+}
+
+.btn-outline-dark {
+    color: $color-main-dark;
+    border-color: $color-main-dark;
+    &:hover {
+        color: $color-light;
+        background-color: $color-main-dark;
+    }
+}
