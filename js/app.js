@@ -62,7 +62,7 @@
         },
 
         skillSlider: function(e){
-            var i = $(e.target).attr('value');
+            var i = $(e.target).data('value');
             model.skillCounter += Number(i);
             if (model.skillCounter < 0) {
                 model.skillCounter = this.$skill.length - 1;
