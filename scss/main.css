@@ -337,6 +337,8 @@ p {
     margin-bottom: 20px;
     padding: 20px;
     width: 100%; }
+    .contact input.error {
+      border: 2px solid red; }
   .contact textarea {
     background-color: #005a75;
     border: none;
@@ -347,6 +349,8 @@ p {
     margin-bottom: 20px;
     padding: 20px;
     width: 100%; }
+    .contact textarea.error {
+      border: 2px solid red; }
   .contact button {
     background-color: #00C1F7;
     border: none;
@@ -360,6 +364,9 @@ p {
     .contact button:hover {
       background-color: #2bd1ff;
       cursor: pointer; }
+
+.message {
+  color: white; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */

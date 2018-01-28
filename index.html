@@ -404,10 +404,16 @@
         <section class="bg-dark angle-left-top">
             <form class="contact" action="https://formspree.io/hi@vivekmaru.com"
       method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="_replyto" placeholder="Email" required>
-                <textarea name="name" rows="8" placeholder="Say something :)" required></textarea>
-                <button type="submit">Send >></button>
+                <input type="text" name="name"  id="name" placeholder="Name" required>
+                <input type="text" name="_replyto"  id="email" placeholder="Email" required>
+                <textarea name="name" rows="8"  id="message" placeholder="Say something :)" required></textarea>
+                <div id="status">
+                    <div class="button">
+                        <button type="submit" id="submit">Send >></button>
+                        <div id="success" class="message" style="display:none">Message sent.</div>
+						<div id="error" class="message" style="display:none;">Something went wrong.</div>
+                    </div>
+                </div>
             </form>
         </section>
         <!-- end contact me -->
