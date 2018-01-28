@@ -57,8 +57,8 @@ section {
     .bg-hero .container h2 {
       margin-left: 20px; }
     .bg-hero .container a {
-      margin-left: -300px;
-      margin-top: 10px; }
+      margin-left: -140px;
+      margin-top: 30px; }
 
 .bg-dark {
   background-color: #003342;
@@ -510,7 +510,7 @@ nav {
   .nav-scroll .nav-items a:last-child {
     padding: 20px; } }
 .showcase {
-  padding: 120px 0; }
+  padding: 80px 0; }
   .showcase .description {
     padding: 30px 50px; }
     .showcase .description .technologies {
